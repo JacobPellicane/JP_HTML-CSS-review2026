@@ -1,195 +1,103 @@
-/* =========================
-   GLOBAL / RESET....
-========================= */
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
 }
 
 body {
-  margin: 0;
-  font-family: 'Montserrat', Arial, sans-serif;
-  background-color: #0b0c1a;
-  color: #f0f0f0;
-  background-image: url("starry_sun.jpg");
-  background-size: cover;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
+    background: linear-gradient(135deg, #0d47a1, #42a5f5);
+    color: white;
+    min-height: 100vh;
 }
 
-/* =========================
-   NAVBAR
-========================= */
-.navbar {
-  background-color: #1b1d3a;
-  padding: 1em 2em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 }
 
-.navbar-left img {
-  height: 35px;
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
-.navbar-right {
-  list-style: none;
-  display: flex;
-  gap: 2em;
-  margin: 0;
-  padding: 0;
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
 
-.navbar-right a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
-.navbar-right a:hover {
-  color: #aaaaff;
+nav a:hover {
+    color: #ffeb3b;
 }
 
-/* =========================
-   PAGE LAYOUT
-========================= */
-.home-card {
-  max-width: 1200px;
-  margin: 2em auto;
-  padding: 1em;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
 }
 
-/* =========================
-   CARDS
-========================= */
-.resource-card {
-  background-color: rgba(28, 31, 47, 0.95);
-  margin: 2em auto;
-  padding: 1.5em;
-  border-radius: 12px;
-  box-shadow: 0 0 12px rgba(255, 255, 255, 0.08);
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 15px;
 }
 
-/* =========================
-   BIO SECTION
-========================= */
-.bio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
 }
 
-.bio-pic img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 3px solid #5555aa;
-  object-fit: cover;
+.btn {
+    display: inline-block;
+    background: #ffeb3b;
+    color: #0d47a1;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-.bio-text h1 {
-  margin-bottom: 0.2em;
+.btn:hover {
+    transform: translateY(-4px);
+    background: white;
 }
 
-.bio-text h4 {
-  margin-top: 0;
-  font-weight: normal;
-  color: #ccccff;
-}
-
-/* =========================
-   PROJECT LAYOUT
-========================= */
-.project {
-  display: flex;
-  gap: 1.5em;
-  align-items: flex-start;
-}
-
-.project iframe {
-  flex: 2;
-  min-width: 320px;
-  height: 450px;
-  border: none;
-  background-color: white;
-  border-radius: 8px;
-}
-
-.reflection {
-  flex: 1;
-  background-color: rgba(255, 255, 255, 0.04);
-  padding: 1em;
-  border-radius: 8px;
-}
-
-.reflection h3 {
-  margin-top: 0;
-  color: #aaaaff;
-}
-
-.reflection p {
-  font-size: 0.95em;
-  color: #dddddd;
-}
-
-/* =========================
-   LINKS / ICONS
-========================= */
-.skill-images {
-  display: flex;
-  justify-content: center;
-  gap: 1.5em;
-  margin-top: 1em;
-}
-
-.picture {
-  transition: transform 0.2s ease;
-}
-
-.picture:hover {
-  transform: scale(1.05);
-}
-
-.link-pic {
-  height: 80px;
-  width: 80px;
-  border-radius: 10px;
-  border: 2px solid white;
-  object-fit: cover;
-}
-
-/* =========================
-   FOOTER
-========================= */
-footer {
-  text-align: center;
-  font-size: 0.85em;
-  color: #cccccc;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-@media (max-width: 900px) {
-  .project {
-    flex-direction: column;
-  }
-
-  .project iframe {
-    width: 100%;
-    min-width: 0;
-    height: 350px;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    gap: 1em;
-  }
-
-  .navbar-right {
-    flex-wrap: wrap;
+/* Cards */
+.cards {
+    display: flex;
     justify-content: center;
-  }
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    width: 280px;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+.card h2 {
+    margin-bottom: 15px;
 }
