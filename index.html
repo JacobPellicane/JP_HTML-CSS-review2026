@@ -1,47 +1,149 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <title>Jacob Pellicane | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- NAVIGATION BAR -->
+
     <header>
         <nav>
-            <div class="logo">🌊 My Portfolio</div>
+
+            <div class="logo">
+                🌊 Jacob's Portfolio
+            </div>
+
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="Aboutme.html">About me</a></li>
-                
+                <li><a href="Aboutme.html">About Me</a></li>
                 <li><a href="contacts.html">Contacts</a></li>
             </ul>
+
+            <button id="theme-toggle">
+                ☀️ Light Mode
+            </button>
+
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Exploring projects, labs, and learning experiences.</p>
 
-        <!-- Button goes to Projects page -->
-        <a href="projects.html" class="btn">View My Work</a>
+    <!-- MAIN HERO SECTION -->
+
+    <section class="hero">
+
+        <h1>Welcome, I'm Jacob Pellicane</h1>
+
+        <p>
+            Aspiring Developer | Programmer | Game Creator
+        </p>
+
+        <p>
+            Exploring technology, building creative projects,
+            and turning ideas into reality one line of code at a time.
+        </p>
+
+        <a href="projects.html" class="btn">
+            Explore My Projects →
+        </a>
+
+        <a href="Aboutme.html" class="btn">
+            Learn More About Me →
+        </a>
+
     </section>
 
-    <!-- Feature Cards -->
-    <section class="cards">
 
-        <div class="card">
-            <h2>🚀 Projects</h2>
-            <p>Check out my latest coding projects and creative work.</p>
+    <!-- FEATURE CARDS -->
+
+    <section class="projects-container">
+
+        <div class="card reveal">
+
+            <div class="card-content">
+
+                <h3>🚀 My Projects</h3>
+
+                <p>
+                    Explore the games, websites, and programming
+                    projects I have created throughout my journey.
+                </p>
+
+                <a href="projects.html" class="project-link">
+                    View Projects →
+                </a>
+
+            </div>
+
         </div>
 
-        
+
+        <div class="card reveal">
+
+            <div class="card-content">
+
+                <h3>👨‍💻 About Me</h3>
+
+                <p>
+                    Learn about my background, my experience
+                    with programming, and my passion for technology.
+                </p>
+
+                <a href="Aboutme.html" class="project-link">
+                    Discover More →
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="card reveal">
+
+            <div class="card-content">
+
+                <h3>📱 Contact Me</h3>
+
+                <p>
+                    Want to connect, ask a question, or discuss
+                    a project? Find my contact information here.
+                </p>
+
+                <a href="contacts.html" class="project-link">
+                    Get In Touch →
+                </a>
+
+            </div>
+
+        </div>
 
     </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Jacob Pellicane |
+            Built with creativity and code 🌊
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
 
 </body>
 </html>
